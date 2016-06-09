@@ -7,12 +7,7 @@ function fibonacci_series(n) {
 	}else if(n===2){
 		arr.push(0,1,1);
 	}else{
-		for(var i=3;i<=n;i++){
-			arr[i] = arr[i-1] + arr[i-2];
-			arr.push(arr[i]);
-			arr[i-2] = arr[i-1];
-			arr[i-1] = arr[i];
-		}
+		arr[n] = fibonacci_series(n-1) + fibonacci_series(n-2);
 	}
 	return arr;
 }
