@@ -9,7 +9,7 @@ function fibonacci_series(n) {
 		arr.push(0,1);
 	}else{
 		arr.push(0,1);
-		for(i = 2;i <= n; i++){
+		for(var i = 2;i <= n; i++){
 			arr[i] = arr[i-1] + arr[i-2];
 			arr.push(arr[i]);
 		}
